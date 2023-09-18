@@ -57,7 +57,7 @@ for you if `/usr/local/bin` is in your `$PATH`. You may need to invoke
 `install` with `sudo`.
 
 ```sh
-git clone https://github.com/gitwatch/gitwatch.git
+git clone https://github.com/pmamico/gitwatch.git
 cd gitwatch
 [sudo] install -b gitwatch.sh /usr/local/bin/gitwatch
 ```
