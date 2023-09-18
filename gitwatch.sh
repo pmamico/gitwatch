@@ -377,8 +377,9 @@ eval "$INW" "${INW_ARGS[@]}" | while read -r line; do
       fi
 
       $GIT add $GIT_ADD_ARGS # add file(s) to index
+      AUTHOR="$(users)"
       # shellcheck disable=SC2086
-      $GIT commit $GIT_COMMIT_ARGS -m"$FORMATTED_COMMITMSG" # construct commit message and commit
+      $GIT commit --author="$AUTHOR <>" $GIT_COMMIT_ARGS -m"$FORMATTED_COMMITMSG" # construct commit message and commit
 
       if [ -n "$PUSH_CMD" ]; then
         echo "Push command is $PUSH_CMD"
