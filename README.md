@@ -2,8 +2,7 @@
 
 # gitwatch
 
-A bash script to watch a file or folder and commit changes to a git repo.
-`gitwatch` can be installed in various ways.  
+A bash script to watch a file or folder and commit changes to a git repo.  
 This is a fork from [original gitwatch](https://github.com/gitwatch/gitwatch) with these modifications:  
 * commit author is the logged in user
 * commit message is the hostname by default
