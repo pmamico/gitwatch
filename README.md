@@ -44,7 +44,7 @@ you might wish to ignore them with a `.gitignore` file.
 ### systemd
 
 
-* Create dir if it does not exist and copy systemd service file with
+* Create dir if it does not exist and copy systemd service file with  
   `mkdir -p "$HOME/.config/systemd/user" && cp gitwatch@.service $HOME/.config/systemd/user`
-* Start and enable the service for a given path by running
+* Start and enable the service for a given path by running  
   `systemctl --user --now enable gitwatch@$(systemd-escape "/my/gitrepo").service`
